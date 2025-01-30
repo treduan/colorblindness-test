@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #bbbbbb;
+        }
+        .colorblind {
+            display: flex;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .colorblind div {
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+        }
+        h1 {
+            padding: 20px;
+        }
+        .div1 {
+            background-color: red;
+            color: green;
+        }
+        .div2 {
+            background-color: green;
+            color: red;
+        }
+        .div3 {
+            background-color: rgb(55, 231, 55);
+            color: rgb(216, 32, 32);
+        }
+        .div4 {
+            background-color: rgb(8, 80, 8);
+            color: rgb(219, 36, 81);
+        }
+        .div5 {
+            background-color: rgb(82, 136, 82);
+            color: rgb(170, 85, 85);
+        }
+        .div6 {
+            background-color: rgb(214, 55, 55);
+            color: rgb(12, 153, 71);
+        }
+        .contrastdiv {
+            display: flex;
+            margin: 20px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        .contrastdiv div {
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+        }
+        .contrast1 {
+            background-color: aliceblue;
+            color: white;
+        }
+        .contrast2 {
+            background-color: rgb(17, 46, 71);
+            color: black;
+        }
+        .contrast3 {
+            background-color: rgb(115, 174, 226);
+            color: rgb(220, 233, 174);
+        }
+        .contrast4 {
+            background-color: rgb(16, 179, 116);
+            color: rgb(18, 85, 35);
+        }
+        .contrast5 {
+            background-color: rgb(104, 161, 211);
+            color: rgb(218, 137, 137);
+        }
+        .contrast6 {
+            background-color: rgb(187, 221, 65);
+            color: rgb(97, 223, 59);
+        }
+        .line {
+            height: 3px;
+            width: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testaa värisokeutta näillä neliöillä</h1>
+    <div class="colorblind">
+        <div class="div1"><h1>Otsikko</h1></div>
+    <div class="div2"><h1>Otsikko</h1></div>
+    <div class="div3"><h1>Otsikko</h1></div>
+    <div class="div4"><h1>Otsikko</h1></div>
+    <div class="div5"><h1>Otsikko</h1></div>
+    <div class="div6"><h1>Otsikko</h1></div>
+</div>
+<div class="line"></div>
+    <div class="contrastdiv">
+        <div class="contrast1"><h1>Otsikko</h1></div>
+        <div class="contrast2"><h1>Otsikko</h1></div>
+        <div class="contrast3"><h1>Otsikko</h1></div>
+        <div class="contrast4"><h1>Otsikko</h1></div>
+        <div class="contrast5"><h1>Otsikko</h1></div>
+        <div class="contrast6"><h1>Otsikko</h1></div>
+    </div>
+</body>
+</html>
